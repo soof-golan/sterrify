@@ -1,0 +1,27 @@
+[build-system]
+requires = ["maturin>=1.2,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "sterrify"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
+
+[tool.poetry]
+name = "sterrify"
+version = "0.1.0"
+description = "Covert objects to strings with rust"
+authors = ["Soof Golan <hi@soofgolan.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+[tool.poetry.group.dev.dependencies]
+maturin = "^1.2.3"
+
