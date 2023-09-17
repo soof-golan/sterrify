@@ -24,4 +24,5 @@ authors = ["Soof Golan <hi@soofgolan.com>"]
 python = ">=3.8,<4.0"
 [tool.poetry.group.dev.dependencies]
 maturin = "^1.2.3"
+pytest = "^7.4.2"
 
